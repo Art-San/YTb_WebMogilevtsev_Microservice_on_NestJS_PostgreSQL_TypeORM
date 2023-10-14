@@ -2,7 +2,7 @@ import { config } from 'dotenv'
 import { join } from 'path'
 import { DataSource, DataSourceOptions } from 'typeorm'
 import { ConfigService } from '@nestjs/config'
-
+// migrations не РАБОТАЕт error: столбец t.schema не существует
 config({ path: join(process.cwd(), '.env') })
 const configService = new ConfigService()
 
